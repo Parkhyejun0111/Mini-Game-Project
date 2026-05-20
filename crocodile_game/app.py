@@ -1,8 +1,10 @@
 import sys
 
 from config import USER_ID, USER_PW
-from crocodile_dentist_game import crocodile_game, game_history
-
+from crocodile_dentist_game import (
+    crocodile_game,
+    game_history
+)
 
 def login():
 
