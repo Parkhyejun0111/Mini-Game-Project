@@ -13,25 +13,3 @@ Python 기반 카지노 미니게임 프로젝트입니다.
 🃏 BlackJack
 딜러와 카드 승부를 펼칩니다.
 카드 합을 21에 가깝게 만들면 승리합니다.
-
-프로젝트 구조:
-game_project/
-│
-├── main.py
-│
-├── common/
-│   ├── config.py
-│   ├── player.py
-│   └── ranking.py
-│
-├── crocodile/
-│   ├── app.py
-│   └── game.py
-│
-├── slot_machine/
-│   ├── app.py
-│   └── game.py
-│
-└── blackjack/
-    ├── app.py
-    └── game.py
