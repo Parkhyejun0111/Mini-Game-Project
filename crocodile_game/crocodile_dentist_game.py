@@ -3,7 +3,10 @@
 import random
 import sys
 
-from config import USER_ID, USER_PW, history
+try:
+    from .config import USER_ID, USER_PW, history
+except ImportError:
+    from config import USER_ID, USER_PW, history
 
 class Crocodile : 
     """ def login():
@@ -21,7 +24,7 @@ class Crocodile :
         sys.exit() """
 
 
-    def crocodile_game():
+    def crocodile_game(self):
 
         teeth = list(range(1, 21))
         bomb = random.choice(teeth)
