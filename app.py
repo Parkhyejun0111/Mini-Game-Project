@@ -1,19 +1,22 @@
 from blackjack.app import run_blackjack
 from crocodile_game.crocodile_dentist_game import Crocodile
+from slotmachine.SlotMachine import SlotMachine
 
 
 class App:
     def __init__(self):
         self.crocodile = Crocodile()
+        self.slotmachine = SlotMachine()
 
     def print_menu(self):
         print()
         print("=================================")
-        print(" MINI GAME MENU")
+        print(" 🎪🎪🎪 MINI GAME MENU 🎪🎪🎪")
         print("=================================")
         print("1. 악어 이빨 게임")
         print("2. 블랙잭")
-        print("3. 게임 종료")
+        print("3. 슬롯 머신")
+        print("4. 게임 종료")
         print("=================================")
 
     def input_menu(self):
@@ -35,6 +38,9 @@ class App:
                 print("\n블랙잭을 시작합니다.\n")
                 run_blackjack()
             elif menu == 3:
+                print("\n슬롯 머신을 시작합니다.\n")
+                self.slotmachine.play()
+            elif menu == 4:
                 print("\n게임을 종료합니다.")
                 break
             else:
