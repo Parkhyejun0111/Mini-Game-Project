@@ -76,7 +76,3 @@ if __name__ == "__main__": #test용
     nickname = input("닉네임을 입력하세요: ")
     game.play(nickname)
 
-
-
-
-
